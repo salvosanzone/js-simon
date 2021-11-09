@@ -35,10 +35,17 @@ container.innerHTML = numToRemember;
 
 //dopo 30 secondi compariranno 5 prompt successivi dove andrò ad inserire i numeri che mi ricordo
 setTimeout(function(){
+  //creo un array inizalmente vuoto dove andranno a finire i numeri che ho inserito all'interno del prompt
+  const numRemembered = [];
+  console.log('numeri scritti nei prompt:',numRemembered);
   //faccio apparire per 5 volte un prompt con un ciclo
   for(let i = 0; i < 5; i++){
-    prompt('Inserisci il numero che hai memorizzato')
+    numRemembered.push(prompt('Inserisci il numero che hai memorizzato'))
+    
   }
 },3000);
 
-
+//creo un array in cui pusho i numeri scritti nell'array
+/*const numRemembered = [];
+numRemembered.push(prompt);
+console.log(numRemembered);*/
