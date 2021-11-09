@@ -33,13 +33,12 @@ console.log('ho agganciato:',container);
 //scrivo sull'html l'array con i 5 numeri random
 container.innerHTML = numToRemember;
 
+//dopo 30 secondi compariranno 5 prompt successivi dove andrò ad inserire i numeri che mi ricordo
+setTimeout(function(){
+  //faccio apparire per 5 volte un prompt con un ciclo
+  for(let i = 0; i < 5; i++){
+    prompt('Inserisci il numero che hai memorizzato')
+  }
+},3000);
 
 
-
-
-// document.querySelector('.container').innerHTML = 'welcome'
-
-// setTimeout(function(){
-  
-//   prompt('come ti chiami')
-// },3000);
